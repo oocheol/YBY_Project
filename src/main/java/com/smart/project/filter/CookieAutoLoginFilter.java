@@ -52,7 +52,8 @@ public class CookieAutoLoginFilter implements HandlerInterceptor {
         log.error("preHandle===>{}", request.getRequestURI());
         if(!checkUrlPermission(request, response)){
             String protocol = request.isSecure() ? "https://" : "http://";
-            response.sendRedirect(protocol + request.getServerName() + "/member/login/index");
+//            response.sendRedirect(protocol + request.getServerName() + "/member/login/index");
+            response.sendRedirect(protocol + "localhost/login");
             return false;
         }
         return HandlerInterceptor.super.preHandle(request, response, handler);
