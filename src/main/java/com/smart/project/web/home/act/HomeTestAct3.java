@@ -38,30 +38,30 @@ public class HomeTestAct3 {
     public final Test test;
 
 
-//        @RequestMapping("/test3")
-//        public String test(Model model, HttpServletResponse response) {
-//
-//            List<CodeObject.Code> data = commonCodeComponent.getCodeList("style_f");
-//            model.addAttribute("data", data);
-//
-//            List<StudyTestVO> data2 =  test.sqlFind();
-//            model.addAttribute("data2", data2);
-//
-//            for(CodeObject.Code c : data){
-//                log.error("{}",c);
-//            }
-//
-//            return "test3";
-//        }
+        @RequestMapping("/test3")
+        public String test(Model model, HttpServletResponse response) {
 
-    @RequestMapping("/test3")
-    public String test(Model model, HttpServletResponse response) {
+            List<CodeObject.Code> data = commonCodeComponent.getCodeList("style_f");
+            model.addAttribute("data", data);
 
-        List<CodeObject.Code> data = commonCodeComponent.getCodeList("style_f");
-        model.addAttribute("data", data);
+            List<StudyTestVO> data2 =  test.sqlFind();
+            model.addAttribute("data2", data2);
 
-        return "test3";
-    }
+            for(CodeObject.Code c : data){
+                log.error("{}",c);
+            }
+
+            return "test3";
+        }
+
+//    @RequestMapping("/test3")
+//    public String test(Model model, HttpServletResponse response) {
+//
+//        List<CodeObject.Code> data = commonCodeComponent.getCodeList("style_f");
+//        model.addAttribute("data", data);
+//
+//        return "test3";
+//    }
 
     @PostMapping("/test4")
     @ResponseBody

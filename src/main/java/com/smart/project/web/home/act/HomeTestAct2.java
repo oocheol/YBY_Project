@@ -41,12 +41,12 @@ public class HomeTestAct2 {
 
 
 
-//            List<CodeObject.Code> data1 = commonCodeComponent.getCodeList("style_f");
-//            model.addAttribute("data", data1);
-//
-//            for(CodeObject.Code c : data1){
-//                log.error("{}",c);
-//            }
+            List<CodeObject.Code> data1 = commonCodeComponent.getCodeList("style_f");
+            model.addAttribute("data", data1);
+
+            for(CodeObject.Code c : data1){
+                log.error("{}",c);
+            }
 
 
 

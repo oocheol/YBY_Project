@@ -33,7 +33,7 @@ public class HomeTestAct {
             log.error("test===>{}", internCookie);
 
 
-//            model.addAttribute("test", "testsstes");
+            model.addAttribute("test", "testsstes");
 
             /*log.error("***************************************");
             List<StudyTestVO> list = test.sqlFind();
